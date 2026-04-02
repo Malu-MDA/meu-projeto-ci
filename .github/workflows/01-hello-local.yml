@@ -1,0 +1,19 @@
+name: Hello Local
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  teste-basico:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Mensagem inicial
+        run: echo "Iniciando testes locais"
+
+      - name: Versao do Node
+        run: node -v
+
+      - name: Finalizacao
+        run: echo "Finalizado com sucesso!"

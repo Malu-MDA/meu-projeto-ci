@@ -1,0 +1,50 @@
+   68  git commit -m "Resolve conflito de merge com a main"
+   69  git push origin feature/subtracao
+   70  history
+   71  git log --oneline
+   72  history > historico_comandos.txt
+   73  historico_comandos.txt
+   74  git log --oneline > historico_git.txt
+   75  historico_git.txt
+   76  ls
+   77  docker --version
+   78  act --version
+   79  C:\tools
+   80  act --version
+   81  clear
+   82  
+   83  clear
+   84  clear
+   85  mkdir -p /c/tools
+   86  cd /c/tools
+   87  curl -LO https://github.com/nektos/act/releases/latest/download/act_Windows_x86_64.zip
+   88  unzip act_Windows_x86_64.zip
+   89  ./act.exe --version
+   90  echo 'export PATH=$PATH:/c/tools' >> ~/.bashrc
+   91  source ~/.bashrc
+   92  act --version
+   93  docker --version
+   94  docker ps
+   95  mkdir meu-projeto-ci
+   96  cd meu-projeto-ci
+   97  git init
+   98  echo "# Meu Projeto CI" > README.md
+   99  git add .
+  100  git commit -m "commit inicial"
+  101  mkdir -p .github/workflows
+  102  cd .github/workflows
+  103  touch 01-hello-local.yml
+  104  nano 01-hello-local.yml
+  105  cd ../../
+  106  act -l
+  107  act -W .github/workflows/01-hello-local.yml | grep "echo"
+  108  act -W .github/workflows/01-hello-local.yml
+  109  cd .github/workflows
+  110  touch 02-pipeline-principal.yml
+  111  nano 02-pipeline-principal.yml
+  112  cd ../../
+  113  act -n
+  114  act -l
+  115  act -W .github/workflows/02-pipeline-principal.yml -P ubuntu-latest=node:slim
+  116  act -j scan-de-seguranca
+  117  history 50 > comandos.txt
