@@ -1,20 +1,3 @@
-   68  git commit -m "Resolve conflito de merge com a main"
-   69  git push origin feature/subtracao
-   70  history
-   71  git log --oneline
-   72  history > historico_comandos.txt
-   73  historico_comandos.txt
-   74  git log --oneline > historico_git.txt
-   75  historico_git.txt
-   76  ls
-   77  docker --version
-   78  act --version
-   79  C:\tools
-   80  act --version
-   81  clear
-   82  
-   83  clear
-   84  clear
    85  mkdir -p /c/tools
    86  cd /c/tools
    87  curl -LO https://github.com/nektos/act/releases/latest/download/act_Windows_x86_64.zip
